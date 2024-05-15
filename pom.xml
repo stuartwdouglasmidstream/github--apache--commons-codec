@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Licensed to the Apache Software Foundation (ASF) under one or more
-contributor license agreements.  See the NOTICE file distributed with
-this work for additional information regarding copyright ownership.
-The ASF licenses this file to You under the Apache License, Version 2.0
-(the "License"); you may not use this file except in compliance with
-the License.  You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
-<!--
- To produce reports, use the reporting profile, for example: mvn -Preporting clean site
- You may need to use the -U option to update your environment if you get an error.
- -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.apache.commons</groupId>
@@ -30,61 +11,42 @@ limitations under the License.
   <artifactId>commons-codec</artifactId>
   <version>1.16.1</version>
   <name>Apache Commons Codec</name>
-  <inceptionYear>2002</inceptionYear>
-  <description>
-     The Apache Commons Codec component contains encoder and decoders for
+  <description>The Apache Commons Codec component contains encoder and decoders for
      various formats such as Base16, Base32, Base64, digest, and Hexadecimal. In addition to these
      widely used encoders and decoders, the codec package also maintains a
-     collection of phonetic encoding utilities.
-  </description>
+     collection of phonetic encoding utilities.</description>
   <url>https://commons.apache.org/proper/commons-codec/</url>
-  <issueManagement>
-    <system>jira</system>
-    <url>https://issues.apache.org/jira/browse/CODEC</url>
-  </issueManagement>
-  <scm>
-    <connection>scm:git:https://gitbox.apache.org/repos/asf/commons-codec</connection>
-    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-codec</developerConnection>
-    <url>https://github.com/apache/commons-codec</url>
-    <tag>HEAD</tag>
-  </scm>
-  <distributionManagement>
-    <site>
-      <id>stagingSite</id>
-      <name>Apache Staging Website</name>
-      <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/commons-${commons.componentid}/</url>
-    </site>
-  </distributionManagement>
+  <inceptionYear>2002</inceptionYear>
   <developers>
     <developer>
-      <name>Henri Yandell</name>
       <id>bayard</id>
+      <name>Henri Yandell</name>
       <email>bayard@apache.org</email>
     </developer>
     <developer>
-      <name>Tim OBrien</name>
       <id>tobrien</id>
+      <name>Tim OBrien</name>
       <email>tobrien@apache.org</email>
       <timezone>-6</timezone>
     </developer>
     <developer>
-      <name>Scott Sanders</name>
       <id>sanders</id>
+      <name>Scott Sanders</name>
       <email>sanders@totalsync.com</email>
     </developer>
     <developer>
-      <name>Rodney Waldhoff</name>
       <id>rwaldhoff</id>
+      <name>Rodney Waldhoff</name>
       <email>rwaldhoff@apache.org</email>
     </developer>
     <developer>
-      <name>Daniel Rall</name>
       <id>dlr</id>
+      <name>Daniel Rall</name>
       <email>dlr@finemaltcoding.com</email>
     </developer>
     <developer>
-      <name>Jon S. Stevens</name>
       <id>jon</id>
+      <name>Jon S. Stevens</name>
       <email>jon@collab.net</email>
     </developer>
     <developer>
@@ -93,7 +55,7 @@ limitations under the License.
       <email>ggregory at apache.org</email>
       <url>https://www.garygregory.com</url>
       <organization>The Apache Software Foundation</organization>
-      <organizationUrl>https://www.apache.org/</organizationUrl>      
+      <organizationUrl>https://www.apache.org/</organizationUrl>
       <roles>
         <role>PMC Member</role>
       </roles>
@@ -103,30 +65,30 @@ limitations under the License.
       </properties>
     </developer>
     <developer>
-      <name>David Graham</name>
       <id>dgraham</id>
+      <name>David Graham</name>
       <email>dgraham@apache.org</email>
     </developer>
     <developer>
-      <name>Julius Davies</name>
       <id>julius</id>
+      <name>Julius Davies</name>
       <email>julius@apache.org</email>
       <organizationUrl>http://juliusdavies.ca/</organizationUrl>
       <timezone>-8</timezone>
     </developer>
     <developer>
-      <name>Thomas Neidhart</name>
       <id>tn</id>
+      <name>Thomas Neidhart</name>
       <email>tn@apache.org</email>
     </developer>
     <developer>
-      <name>Rob Tompkins</name>
       <id>chtompki</id>
+      <name>Rob Tompkins</name>
       <email>chtompki@apache.org</email>
     </developer>
     <developer>
-      <name>Matt Sicker</name>
       <id>mattsicker</id>
+      <name>Matt Sicker</name>
       <email>mattsicker@apache.org</email>
       <url>https://musigma.blog/</url>
     </developer>
@@ -228,6 +190,43 @@ limitations under the License.
       </roles>
     </contributor>
   </contributors>
+  <scm>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/commons-codec</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-codec</developerConnection>
+    <url>https://github.com/apache/commons-codec</url>
+  </scm>
+  <issueManagement>
+    <system>jira</system>
+    <url>https://issues.apache.org/jira/browse/CODEC</url>
+  </issueManagement>
+  <distributionManagement>
+    <site>
+      <id>stagingSite</id>
+      <name>Apache Staging Website</name>
+      <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/commons-${commons.componentid}/</url>
+    </site>
+  </distributionManagement>
+  <properties>
+    <checkstyle.header.file>${basedir}/src/conf/checkstyle-header.txt</checkstyle.header.file>
+    <commons.encoding>UTF-8</commons.encoding>
+    <commons.release.version>1.16.1</commons.release.version>
+    <commons.bc.version>1.16.0</commons.bc.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <commons.jira.id>CODEC</commons.jira.id>
+    <commons.jira.pid>12310464</commons.jira.pid>
+    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
+    <checkstyle.config.file>${basedir}/src/conf/checkstyle.xml</checkstyle.config.file>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <commons.rc.version>RC1</commons.rc.version>
+    <jacoco.skip>false</jacoco.skip>
+    <commons.bc.next>1.16.2</commons.bc.next>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <commons.componentid>codec</commons.componentid>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.outputTimestamp>2024-02-04T15:10:25Z</project.build.outputTimestamp>
+    <commons.module.name>org.apache.commons.codec</commons.module.name>
+    <commons.release.isDistModule>true</commons.release.isDistModule>
+  </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.commons</groupId>
@@ -258,35 +257,11 @@ limitations under the License.
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <commons.componentid>codec</commons.componentid>
-    <commons.module.name>org.apache.commons.codec</commons.module.name>
-    <commons.jira.id>CODEC</commons.jira.id>
-    <commons.jira.pid>12310464</commons.jira.pid>
-    <!-- Ensure copies work OK (can be removed later when this is in parent POM) -->
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <commons.encoding>UTF-8</commons.encoding>
-    <checkstyle.header.file>${basedir}/src/conf/checkstyle-header.txt</checkstyle.header.file>
-    <checkstyle.config.file>${basedir}/src/conf/checkstyle.xml</checkstyle.config.file>
-    <jacoco.skip>false</jacoco.skip>
-    <!-- Commons Release Plugin -->
-    <commons.release.version>1.16.1</commons.release.version>
-    <commons.bc.version>1.16.0</commons.bc.version>
-    <commons.bc.next>1.16.2</commons.bc.next>
-    <commons.rc.version>RC1</commons.rc.version>
-    <commons.release.isDistModule>true</commons.release.isDistModule>
-    <commons.distSvnStagingUrl>scm:svn:https://dist.apache.org/repos/dist/dev/commons/${commons.componentid}</commons.distSvnStagingUrl>
-    <project.build.outputTimestamp>2024-02-04T15:10:25Z</project.build.outputTimestamp>
-  </properties>
   <build>
     <defaultGoal>clean verify apache-rat:check japicmp:cmp checkstyle:check javadoc:javadoc</defaultGoal>
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-scm-publish-plugin</artifactId>
           <version>${commons.scm-publish.version}</version>
           <configuration>
@@ -296,7 +271,6 @@ limitations under the License.
           </configuration>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <configuration>
             <configLocation>${checkstyle.config.file}</configLocation>
@@ -304,30 +278,14 @@ limitations under the License.
             <includeTestSourceDirectory>true</includeTestSourceDirectory>
             <resourceExcludes>NOTICE.txt,LICENSE.txt,**/pom.properties,**/sha512.properties</resourceExcludes>
           </configuration>
-        </plugin>        
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
-
-      <plugin>
-        <groupId>org.apache.rat</groupId>
-        <artifactId>apache-rat-plugin</artifactId>
-        <configuration>
-          <excludes>
-            <exclude>src/test/resources/org/apache/commons/codec/bla.tar</exclude>
-            <exclude>src/test/resources/org/apache/commons/codec/bla.tar.xz</exclude>
-            <exclude>src/test/resources/org/apache/commons/codec/empty.bin</exclude>
-            <exclude>src/test/resources/org/apache/commons/codec/small.bin</exclude>
-          </excludes>
-        </configuration>
-      </plugin>
-
-      <!-- Add Java 9 Automatic-Module-Name -->
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <configuration>
           <archive combine.children="append">
-            <!-- Temporary fix, remove this after this has implemented in parent pom -->
             <manifestEntries>
               <Automatic-Module-Name>${commons.module.name}</Automatic-Module-Name>
             </manifestEntries>
@@ -335,7 +293,6 @@ limitations under the License.
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <excludes>
@@ -345,7 +302,6 @@ limitations under the License.
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <descriptors>
@@ -355,14 +311,9 @@ limitations under the License.
           <tarLongFileMode>gnu</tarLongFileMode>
         </configuration>
       </plugin>
-      <!-- Allow use of mvn checkstyle:checkstyle. Must agree with reporting section below. -->
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
       </plugin>
-      <!-- Specify source for JDK 11+ javadoc tool to ignore the 'unnamed' module.
-           See: https://bugs.openjdk.java.net/browse/JDK-8212233.
-           To be removed with parent 49. -->
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
         <configuration>
@@ -375,7 +326,6 @@ limitations under the License.
         <version>1.23</version>
         <configuration>
           <ignores>
-            <!-- JDK9 breaks compatibility by returning ByteBuffer not Buffer -->
             <ignore>java.nio.ByteBuffer</ignore>
           </ignores>
         </configuration>
@@ -397,9 +347,7 @@ limitations under the License.
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <!-- We need to specify reportSets because 2.9.1 creates two reports -->
         <reportSets>
           <reportSet>
             <reports>
@@ -409,7 +357,6 @@ limitations under the License.
         </reportSets>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
         <version>${commons.pmd.version}</version>
         <configuration>
